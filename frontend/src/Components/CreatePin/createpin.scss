@@ -1,0 +1,108 @@
+@import "../../css-config/mixins.scss";
+// .wrapper{
+//     width:100%;
+//     height:1000px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//    color:#4f4c4c;
+//     background-color: #e9e9e9;
+// }
+.main{
+    background-color: white;
+    width:100%;
+    height:100%;
+   
+    display:block;
+    @include md{
+        display: flex;
+        justify-content: center;
+
+     }
+    
+    
+}
+.uploadimg{
+    
+    width:300px;
+    height:100%;
+    background-color:#e9e9e9; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: dotted;
+    border-color:#efefef;
+    margin:40px;
+    border-radius: 15px;
+    @include md{
+        width:500px;
+        height:500px;
+     }
+    
+    .content{
+        padding:2px;
+        font-size:1.2rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        padding:5px;
+    }
+    .fileupload{
+        width:0px;
+        
+    }
+}
+.description{
+    margin-top:30px;
+    position: relative;
+    .save{
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 18px;
+        width:80px;
+        height:40px;
+        border-radius:50px;
+        border:none;
+        background-color: red;
+        color:white;
+
+    }
+    .input{
+        border:none;
+        border-bottom: 2px solid #e9e9e9;
+        outline: none;
+        margin-top:10px;
+        width:80%;
+        height:100%;
+        padding: 10px;
+    }
+    .title{
+        font-size:xx-large;
+        font-weight: 600;
+        margin-top:100px;
+     
+    }
+    .inputfield{
+        display: flex;
+        flex-direction: column;
+    }
+    .info{
+        margin-top: 50px;
+        font-size:large;
+    }
+    // .destination{
+    //     position:absolute;
+    //     bottom:20%;
+    //     right:16px;
+    //     border:none;
+    //     border-bottom: 2px solid #e9e9e9;
+    //     outline: none;
+    //     width:100%;
+    // }
+}
+
